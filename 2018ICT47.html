@@ -1,0 +1,318 @@
+<html>
+	<head>
+		<title>CSS Assignment 01</title>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="CSS Assignment 1">
+		<meta name="keywords" content="ICT, IT, HTML, CSS, Assignment">
+		<meta name="author" content="Thiwanga Sandaruwan">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="icon" href="logonew.png" sizes="16x16" type="image/png">
+		
+		<style>
+			body{
+				background-image:linear-gradient(black,white);
+			}
+			
+			h1{
+				color:white;
+				
+			}
+			
+			.parag{
+				color:yellow;
+				font-size:20px;
+			}
+			
+			.div1{
+				border: 3px outset red;
+				background: linear-gradient(white,black);
+			}
+			
+			.para1{
+				font-size: 25px;
+				color:lightgreen;
+			}
+			
+			.para2{
+				font-size: 40px;
+				color: white;
+			}
+			
+			.para4{
+				font-size: 25px;
+				color:blue;
+			}
+			
+			.para3{
+				font-size: 30px;
+			}
+			
+			.div2{
+				border: 3px outset blue;
+				background: linear-gradient(white,black);
+				width: 400px;
+				height:300px;
+			}
+			
+			.div3{
+				width: 200px;
+				background-color: #333300;
+				
+			}
+			
+			.div4{
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				position: relative;
+				animation-name: ict;
+				animation-duration: 4s;
+			}
+			
+			@keyframes ict {
+				0%   {background-image: linear-gradient(to right,yellow,white); left:0px; top:0px;}
+				25%  {background-image: linear-gradient(to left,blue,white); left:100px; top:0px;}
+				50%  {background-image: linear-gradient(to bottom,red,white); left:100px; top:100px;}
+				75%  {background-image: linear-gradient(to top,green,white); left:0px; top:100px;}
+				100% {background-image: linear-gradient(120deg,yellow,white); left:0px; top:0px;}
+			}
+			
+			@keyframes ict2 {
+				0%   {background-image: linear-gradient(180deg,yellow,blue); left:0px; top:0px;}
+				25%  {background-image: linear-gradient(blue,white,red); left:100px; top:0px;}
+				50%  {background-image: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet); left:100px; top:100px;}
+				75%  {background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); left:0px; top:100px;}
+				100% {background-image: linear-gradient(red, blue 10%, yellow 20%); left:0px; top:0px;}
+			}
+			
+			.div5{
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				position: relative;
+				animation-name: ict2;
+				animation-duration: 4s;
+				animation-iteration-count: infinite;
+			}
+			
+			.div6{
+				border: 3px outset blue;
+				background: linear-gradient(white,black);
+				width: 400px;
+				height:300px;
+			}
+			
+			.div7{
+				border: 3px outset blue;
+				background: linear-gradient(white,black);
+				width: 400px;
+				height:300px;
+			}
+			
+			.div8{
+				width: 100px;
+				height: 100px;
+				background-color: yellow;
+				position: relative;
+				animation-name: ictreturn;
+				animation-duration: 4s;
+				animation-iteration-count: infinite;
+			}
+			
+			@keyframes ictreturn {
+				0%   {background-image: radial-gradient(blue, yellow, white); left:0px; top:0px;}
+				25%  {background-image: radial-gradient(red 25%, yellow 20%, green 55%); left:0px; top:100px;}
+				50%  {background-image: radial-gradient(circle, red, yellow, green); left:100px; top:100px;}
+				75%  {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:100px; top:0px;}
+				100% {background-image: radial-gradient(blue, yellow, white); left:0px; top:0px;}
+			}
+			
+			.rotate {
+				width: 150px;
+				height: 150px;
+				background-color: green;
+				-ms-transform: rotate(20deg);
+				transform: rotate(45deg);
+			}
+			
+			.rotate2 {
+				width: 150px;
+				height: 150px;
+				background-color: green;
+				-ms-transform: rotate(20deg);
+				transform: rotate(45deg);
+				position: relative;
+				animation-name: ictreturn;
+				animation-duration: 4s;
+				animation-iteration-count: infinite;
+			}
+			
+			.div10{
+				border: 3px outset blue;
+				background: linear-gradient(white,black);
+				width: 500px;
+				height:400px;
+			}
+			
+			.div9{
+				border: 3px outset red;
+				background: linear-gradient(white,yellow);
+			}
+			
+			.liner1 {
+				width: 20px;
+				height: 20px;
+				background-color: green;
+				-ms-transform: rotate(20deg);
+				transform: rotate(45deg);
+				position: relative;
+				animation-name: liner1;
+				animation-duration: 4s;
+				animation-iteration-count: infinite;
+			}
+			
+			@keyframes liner1 {
+				0%   {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:0px; top:0px;}
+				25%  {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:150px; top:0px;}
+				50%  {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:0px; top:0px;}
+				75%  {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:-150px; top:0px;}
+				100% {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:0px; top:0px;}
+			}
+			
+			.liner2 {
+				width: 30px;
+				height: 5px;
+				background-color: green;
+				position: relative;
+				animation-name: liner2;
+				animation-duration: 4s;
+				animation-iteration-count: infinite;
+			}
+			
+			@keyframes liner2 {
+				0%   {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:0px; top:0px;}
+				25%  {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:-100px; top:0px;}
+				50%  {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:0px; top:0px;}
+				75%  {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:100px; top:0px;}
+				100% {background-image: repeating-radial-gradient(red, yellow 10%, green 15%); left:0px; top:0px;}
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<center>
+			<p class="para2">CSS Assignment 01<br>
+				<center>
+				<div class="liner1">
+				</div>
+				</center>
+				
+				<p class="para3">
+				<font color="blue">2018</font>
+				<font color="green">/</font>
+				<font color="red">ICT</font>
+				<font color="green">/</font>
+				<font color="yellow">47</font>
+				</p>
+			</p>
+			
+			<div class="liner2">
+			</div>
+			
+		</center>
+		<br>
+		<hr size=4px color=white>
+		<br>
+		
+		<center>
+			<div class="div1" style="width:60%; height=50px;">
+		
+				<p class="para1">CSS Animations and Gradients</p>
+			
+			</div>
+			<br>
+		</center>
+		<center>
+		<div class="div2"><center>
+			<div class="div3" float="left">
+				<center>
+					<p class="parag">Simple Animation</p>
+				</center>
+			</div>
+			<div class="div4">
+			</div>
+		</center></div>
+		
+		<br>
+		
+		<div class="div6"><center>
+			<div class="div3" float="left">
+				<center>
+					<p class="parag">Unlimited Animation</p>
+				</center>
+			</div>
+			<div class="div5"> 
+			</div>
+		</center></div>
+		
+		<br>
+		
+		<div class="div7"><center>
+			<div class="div3" float="left">
+				<center>
+					<p class="parag">Return Animation</p>
+				</center>
+			</div>
+			<div class="div8">
+			</div>
+		</center></div>
+		
+		<br>
+		
+		<div class="div7"><center>
+			<div class="div3" float="left">
+				<center>
+					<p class="parag">Rotation</p>
+				</center>
+			</div><br><br>
+			<div class="rotate">
+				45deg
+			</div>
+		</center></div>
+		
+		<br>
+		
+		<div class="div10"><center>
+			<div class="div3" float="left">
+				<center>
+					<p class="parag">Rotate Animation</p>
+				</center>
+			</div><br><br>
+			<div class="rotate2">
+				45deg
+			</div>
+		</center></div>
+		
+		<br>
+		
+		<center>
+			<div class="div9" style="width:60%; height=50px;">
+		
+				<p class="para4">This is the END</br>
+				Thank you for Watching</p>
+			
+			</div>
+			<br>
+		</center>
+		</center>
+		
+		
+		
+	</body>
+
+</html>
